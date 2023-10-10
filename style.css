@@ -13,6 +13,7 @@ body {
   background-color: transparent;
   color: white;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .js-button-1{
@@ -22,6 +23,7 @@ body {
   background-color: transparent;
   color: white;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .js-button-2{
@@ -31,6 +33,7 @@ body {
   background-color: transparent;
   color: white;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .js-button-3{
@@ -40,6 +43,7 @@ body {
   background-color: transparent;
   color: white;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .js-button-4{
@@ -49,6 +53,7 @@ body {
   background-color: transparent;
   color: white;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .js-button-5{
@@ -58,23 +63,27 @@ body {
   background-color: transparent;
   color: white;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .goal {
   background-color: green;
   font-weight: bold;
+  transition: 0.5s;
 }
 
 .own-goal{
   background-color: red;
   color: white;
   font-weight: bold;
+  transition: 0.5s;
 }
 
 .save-goal{
   background-color: green;
   color: white;
   font-weight: bold;
+  transition: 0.5s;
 }
 
 img {

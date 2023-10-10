@@ -29,7 +29,8 @@ function randomScoreGoal() {
       .innerHTML = `<img src="images/sanchez.jpg" alt="">`
   }
 
-  
+  document.querySelector('.js-stats')
+    .innerHTML = `Icardi: ${stats.Icardi} Zaha: ${stats.Zaha} Ziyech: ${stats.Ziyech} Sanchez: ${stats.Sanchez}`
 
   
 }
@@ -65,22 +66,26 @@ function randomSaveGoal(){
 
 function playerGoal(player, selector){
   if(player === 'Icardi') {
+    
     stats.Icardi += 1
     document.querySelector('.js-text-goal-player')
       .innerHTML = `<img src="images/${player}.webp" alt="">`
   } else if(player === 'Zaha') {
+    
     stats.Zaha += 1
     document.querySelector('.js-text-goal-player')
       .innerHTML = `<img src="images/${player}.jpeg" alt="">`
   } else if(player === 'Ziyech') {
+    
     stats.Ziyech += 1
     document.querySelector('.js-text-goal-player')
       .innerHTML = `<img src="images/${player}.webp" alt="">`
   } else if(player === 'Sanchez') {
+    
     stats.Sanchez += 1
     document.querySelector('.js-text-goal-player')
       .innerHTML = `<img src="images/${player}.jpg" alt="">`
-  }
+  } 
 
   const buttonElement = document.querySelector(selector)
   
@@ -100,18 +105,25 @@ function playerGoal(player, selector){
       .innerHTML = ``
   }
 
+
+
+ 
+
   document.querySelector('.js-stats')
     .innerHTML = `Icardi: ${stats.Icardi} Zaha: ${stats.Zaha} Ziyech: ${stats.Ziyech} Sanchez: ${stats.Sanchez}`
 
   console.log(stats)
+
+
 }
 
 function previousGoal(){
-  const buttonElement = document.querySelector('.goal')
+  const previousButton = document.querySelector('.goal')
 
-  if(buttonElement) {
-    buttonElement.classList.remove('goal')
-    buttonElement.innerHTML = player
+  if(previousButton) {
+    previousButton.classList.remove('goal')
   }
 }
 
+document.querySelector('.js-stats')
+.innerHTML = `Icardi: ${stats.Icardi} Zaha: ${stats.Zaha} Ziyech: ${stats.Ziyech} Sanchez: ${stats.Sanchez}`
