@@ -34,10 +34,20 @@ function randomSaveGoal(){
     stats['Away Score'] += 1
     buttonElement.classList.remove('save-goal')
     buttonElement.classList.add('own-goal')
+    document.querySelector('.js-text-save')
+      .innerHTML = `Muslera could not get this one.`
+
+    document.querySelector('.js-text-save-pic')
+      .innerHTML = `<img src="images/muslera-gol.png" alt="">`
   } else if(saveGoal > 0.5) {
     stats.Saves += 1
     buttonElement.classList.remove('own-goal')
     buttonElement.classList.add('save-goal')
+    document.querySelector('.js-text-save')
+      .innerHTML = `An amazing save from Muslera!`
+    
+    document.querySelector('.js-text-save-pic')
+      .innerHTML = `<img src="images/muslera-save.jpg" alt="">`
   }
 
   console.log(stats)
@@ -46,12 +56,20 @@ function randomSaveGoal(){
 function playerGoal(player, selector){
   if(player === 'Icardi') {
     stats.Icardi += 1
+    document.querySelector('.js-text-goal-player')
+      .innerHTML = `<img src="images/${player}.webp" alt="">`
   } else if(player === 'Zaha') {
     stats.Zaha += 1
+    document.querySelector('.js-text-goal-player')
+      .innerHTML = `<img src="images/${player}.jpeg" alt="">`
   } else if(player === 'Ziyech') {
     stats.Ziyech += 1
+    document.querySelector('.js-text-goal-player')
+      .innerHTML = `<img src="images/${player}.webp" alt="">`
   } else if(player === 'Sanchez') {
     stats.Sanchez += 1
+    document.querySelector('.js-text-goal-player')
+      .innerHTML = `<img src="images/${player}.jpg" alt="">`
   }
 
   const buttonElement = document.querySelector(selector)
@@ -66,6 +84,9 @@ function playerGoal(player, selector){
     buttonElement.classList.remove('goal')
     buttonElement.innerHTML = player
     document.querySelector('.js-text-goal')
+      .innerHTML = ``
+    
+    document.querySelector('.js-text-goal-player')
       .innerHTML = ``
   }
 
