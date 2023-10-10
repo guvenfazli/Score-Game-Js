@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: Arial;
+}
+
+.js-button{
+  padding: 20px;
+  border-radius: 50px;
+  border: 3px solid gray;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.js-button-1{
+  padding: 20px;
+  border-radius: 50px;
+  border: 3px solid gray;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.js-button-2{
+  padding: 20px;
+  border-radius: 50px;
+  border: 3px solid gray;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.js-button-3{
+  padding: 20px;
+  border-radius: 50px;
+  border: 3px solid gray;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.js-button-4{
+  padding: 20px;
+  border-radius: 50px;
+  border: 3px solid gray;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.js-button-5{
+  padding: 20px;
+  border-radius: 50px;
+  border: 3px solid gray;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
