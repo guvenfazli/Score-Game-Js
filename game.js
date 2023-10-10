@@ -13,15 +13,25 @@ function randomScoreGoal() {
 
   if(randomPlayer > 0 && randomPlayer < 1/4) {
     stats.Icardi += 1
+    document.querySelector('.js-text-goal-player')
+      .innerHTML = `<img src="images/icardi.webp" alt="">`
   } else if(randomPlayer > 1/4 && randomPlayer < 2/4) {
     stats.Zaha += 1
+    document.querySelector('.js-text-goal-player')
+      .innerHTML = `<img src="images/zaha.jpeg" alt="">`
   } else if(randomPlayer > 2/4 && randomPlayer < 3/4) {
     stats.Ziyech += 1
+    document.querySelector('.js-text-goal-player')
+      .innerHTML = `<img src="images/ziyech.webp" alt="">`
   } else if(randomPlayer > 3/4 && randomPlayer < 1) {
     stats.Sanchez += 1
+    document.querySelector('.js-text-goal-player')
+      .innerHTML = `<img src="images/sanchez.jpg" alt="">`
   }
 
-  console.log(stats)
+  
+
+  
 }
 
 function randomSaveGoal(){
@@ -90,6 +100,9 @@ function playerGoal(player, selector){
       .innerHTML = ``
   }
 
+  document.querySelector('.js-stats')
+    .innerHTML = `Icardi: ${stats.Icardi} Zaha: ${stats.Zaha} Ziyech: ${stats.Ziyech} Sanchez: ${stats.Sanchez}`
+
   console.log(stats)
 }
 
@@ -101,3 +114,4 @@ function previousGoal(){
     buttonElement.innerHTML = player
   }
 }
+
