@@ -8,20 +8,27 @@
 </head>
 <body>
   
-<button class="js-button">Score!</button>
-<button class="js-button-1">Icardi</button>
-<button class="js-button-2">Zaha</button>
-<button class="js-button-3">Ziyech</button>
-<button class="js-button-4">Sanchez</button>
-<button class="js-button-5">Shoot against Galatasaray</button>
+<button class="js-button" onclick="
+    randomScoreGoal()
+  ">Score!</button>
+<button class="js-button-1" onclick="
+  playerGoal('Icardi', '.js-button-1')
+">Icardi</button>
+<button class="js-button-2" onclick="
+  playerGoal('Zaha', '.js-button-2')
+">Zaha</button>
+<button class="js-button-3" onclick="
+  playerGoal('Ziyech', '.js-button-3')
+">Ziyech</button>
+<button class="js-button-4" onclick="
+  playerGoal('Sanchez', '.js-button-4')
+">Sanchez</button>
+<button class="js-button-5" onclick="
+  randomSaveGoal()
+">Shoot against Galatasaray</button>
+<p class="js-text-goal">Gooool! Mükemmel bir bitiricilik, golü atan oyuncumuz resim</p>
 
-
-
-
-
-
-
-
+<p class="js-text-save">Muslera! Amazing Save!</p>
 
 
   <script src="game.js"></script>
