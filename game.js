@@ -26,12 +26,18 @@ function randomScoreGoal() {
 
 function randomSaveGoal(){
   const randomNumber = Math.random();
+  const buttonElement = document.querySelector('.js-button-5')
   let saveGoal = randomNumber;
+
 
   if(saveGoal < 0.5) {
     stats['Away Score'] += 1
+    buttonElement.classList.remove('save-goal')
+    buttonElement.classList.add('own-goal')
   } else if(saveGoal > 0.5) {
     stats.Saves += 1
+    buttonElement.classList.remove('own-goal')
+    buttonElement.classList.add('save-goal')
   }
 
   console.log(stats)
@@ -49,14 +55,28 @@ function playerGoal(player, selector){
   }
 
   const buttonElement = document.querySelector(selector)
+  
 
   if(!buttonElement.classList.contains('goal')){
     buttonElement.classList.add('goal')
     buttonElement.innerHTML = `Goal!`
+    document.querySelector('.js-text-goal')
+      .innerHTML = `An amazing goal! The scorer is ${player}!`
   } else {
     buttonElement.classList.remove('goal')
     buttonElement.innerHTML = player
+    document.querySelector('.js-text-goal')
+      .innerHTML = ``
   }
 
   console.log(stats)
+}
+
+function previousGoal(){
+  const buttonElement = document.querySelector('.goal')
+
+  if(buttonElement) {
+    buttonElement.classList.remove('goal')
+    buttonElement.innerHTML = player
+  }
 }

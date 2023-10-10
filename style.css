@@ -65,3 +65,15 @@ body {
   font-weight: bold;
 }
 
+.own-goal{
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+.save-goal{
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
